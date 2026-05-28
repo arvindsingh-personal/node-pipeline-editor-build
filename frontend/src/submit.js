@@ -4,7 +4,7 @@ export const SubmitButton = () => {
   const { nodes, edges } = useStore();
 
   const handleSubmit = async () => {
-    const res = await fetch("http://localhost:8000/pipelines/parse", {
+    const res = await fetch("https://node-pipeline-editor-build-backend.vercel.app", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
